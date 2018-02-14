@@ -12,7 +12,7 @@ namespace lab2
         public String tarif;
         public int freeLines;
 
-        static int count = 0;
+        public static int count = 0;
 
         public APS()
         {
@@ -91,9 +91,13 @@ namespace lab2
             Console.WriteLine();
         }
 
-        public static implicit operator string(APS v)
+        /*public static implicit operator string(APS v)
         {
             throw new NotImplementedException();
+        }*/
+        ~APS()
+        {
+            count--;
         }
     }
 }
