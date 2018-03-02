@@ -4,15 +4,15 @@ namespace lab2
 {
     class APS
     {
-        public String name;
-        public int number;
-        public String addres;
-        public int countUsers;
-        public double usersPay;
-        public String tarif;
-        public int freeLines;
+        public String name;     // Название АТС
+        public int number;      // Номер АТС
+        public String addres;   // Адрес
+        public int countUsers;  // Количество пользователей
+        public double usersPay; // Абонентская плата
+        public String tarif;    // Тариф
+        public int freeLines;   // Свободные линии
 
-        public static int count = 0;
+        public static int count = 0;    // Содержит количество объектов
 
         public APS()
         {
@@ -59,10 +59,18 @@ namespace lab2
             this.freeLines = freeLines;
             count++;
         }
+        /// <summary>
+        /// Возвращает имя
+        /// </summary>
+        /// <returns>Содержит имя объекта</returns>
         public override string ToString()
         {
             return name;
         }
+        /// <summary>
+        /// Возвращает все поля объекта
+        /// </summary>
+        /// <returns>Строка, содержащая значения всех полей</returns>
         public String ToStringFull() 
         {
             return "Название: "
@@ -82,19 +90,9 @@ namespace lab2
                 + "\nсвободные линии: "
                 + freeLines.ToString();
         }
-        public void printName()
-        {
-            Console.WriteLine(name);
-        }
-        public void printNumber16()
-        {
-            Console.WriteLine();
-        }
 
-        /*public static implicit operator string(APS v)
-        {
-            throw new NotImplementedException();
-        }*/
+
+
         ~APS()
         {
             count--;

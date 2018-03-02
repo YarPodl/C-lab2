@@ -49,6 +49,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
+            this.labelWarning = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,13 +93,13 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(332, 111);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(125, 121);
+            this.listBox1.Size = new System.Drawing.Size(125, 134);
             this.listBox1.TabIndex = 4;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(332, 243);
+            this.buttonAdd.Location = new System.Drawing.Point(332, 281);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(125, 23);
             this.buttonAdd.TabIndex = 5;
@@ -220,7 +221,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(133, 243);
+            this.buttonSave.Location = new System.Drawing.Point(133, 281);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 20;
@@ -228,11 +229,22 @@
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
+            // labelWarning
+            // 
+            this.labelWarning.AutoSize = true;
+            this.labelWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWarning.ForeColor = System.Drawing.Color.Red;
+            this.labelWarning.Location = new System.Drawing.Point(36, 250);
+            this.labelWarning.Name = "labelWarning";
+            this.labelWarning.Size = new System.Drawing.Size(0, 20);
+            this.labelWarning.TabIndex = 21;
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 301);
+            this.ClientSize = new System.Drawing.Size(499, 316);
+            this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label9);
@@ -285,6 +297,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Label labelWarning;
     }
 }
 
